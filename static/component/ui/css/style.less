@@ -1,0 +1,342 @@
+@import "main.less";
+body {
+    .mui-content
+}
+
+.mui-content {
+    color: @text-main;
+    background: @color-back;
+}
+
+.mui-bar-tab .mui-tab-item.mui-active {
+    color: @color-main;
+    border-color: @color-main;
+}
+
+.mui-icon .mui-badge {
+    background: @color-warn;
+    border-radius: 0;
+}
+
+.mui-slider {
+    .mui-segmented-control-inverted {
+        .mui-control-item {
+            font-size: 14px;
+            color: @text-code;
+            border-color: @text-code;
+            position: relative;
+            border-bottom: 2px solid;
+            &.mui-active {
+                border-bottom: 2px solid !important;
+                color: @color-main;
+                border-color: @color-main;
+            }
+            .mui-badge {
+                background: @color-warn;
+                color: @color-white;
+                border-radius: 0;
+                font-size: 10px;
+                line-height: 14px;
+                position: absolute;
+                margin-left: -10px;
+                padding: 1px 5px;
+                height: 14px;
+                top: 4px;
+                right: 0px;
+            }
+        }
+    }
+}
+
+.bottom-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: @border-line;
+    .bottom-bar-total {
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        color: @text-code;
+        text-align: right;
+        padding: 0 15px;
+        background: @color-white;
+        .text-block {
+            margin-left: 4px;
+        }
+    }
+    .btn-max {
+        border-radius: 0;
+        width: 100%;
+        line-height: 16px;
+        padding-top: 19.5px;
+        font-size: 16px;
+        padding-bottom: 14.5px;
+    }
+}
+
+.mui-table-view>.mui-table-view-cell {
+    @padding: 15px;
+    height: 60px;
+    padding-top: @padding;
+    padding-bottom: @padding;
+    a {
+        margin-top: -@padding;
+        line-height: 30px;
+        height: 60px;
+    }
+}
+
+.mui-input-group {
+    .mui-checkbox label,
+    .mui-radio label {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .mui-checkbox input[type=checkbox],
+    .mui-radio input[type=radio] {
+        top: 6px;
+    }
+}
+
+.mui-card-view {
+    padding: 0;
+    margin: 0;
+    .mui-card {
+        margin: 0 0 10px 0;
+        box-shadow: none;
+        .mui-card-header {
+            color: @text-code;
+            font-size: @size-main;
+            display: block;
+            margin: 0 15px;
+            padding: 5px 0;
+            line-height: 12px;
+            height: 12px;
+            min-height: 22px;
+            border-bottom: @border-line;
+            &after {
+                content: none;
+            }
+        }
+        .mui-card-content-inner {
+            padding: 5px 15px;
+        }
+        .text-title {
+            font-size: @size-title;
+            margin: 4px 0;
+        }
+        .mui-card-content-noheader {
+            .text-code {
+                margin-bottom: 8px;
+                line-height: 12px;
+            }
+            .text-block {
+                margin-top: -15px;
+                margin-bottom: 10px;
+            }
+            .mui-icon {
+                font-size: 16px;
+            }
+            button {
+                position: absolute;
+                bottom: 15px;
+                margin-top: 0;
+                padding: 7px 24px;
+                font-size: 13px;
+                height: 30px;
+            }
+        }
+        button {
+            position: absolute;
+            right: 15px;
+            padding: 7px 24px;
+            font-size: 13px;
+            top: 50%;
+            margin-top: -18px;
+            line-height: 13px;
+        }
+    }
+}
+
+.item-list {
+    >.mui-table-view-cell>a:not(.mui-btn) {
+        margin-right: -105px;
+    }
+    .mui-checkbox {
+        margin-left: -20px;
+    }
+    .mui-table-view-cell:after {
+        left: 0;
+    }
+}
+
+.mui-checkbox input[type=checkbox],
+.mui-radio input[type=radio] {
+    top: 0;
+}
+
+.mui-checkbox input[type=checkbox]:checked:before,
+.mui-radio input[type=radio]:checked:before {
+    color: @color-main;
+    font-size: 26px;
+    padding-top: 0;
+    padding-bottom: 0px;
+}
+
+.mui-checkbox.mui-left label,
+.mui-radio.mui-left label {
+    padding-left: 56px;
+    padding-top: 0;
+    padding-bottom: 0px;
+}
+
+.mui-btn {
+    border-radius: 5px;
+    &.mui-btn-primary:not(.mui-btn-outlined) {
+        color: @color-white;
+        background: @color-main;
+        border-color: @color-main;
+    }
+    &.mui-btn-outlined {
+        &.mui-btn-primary {
+            color: @color-main;
+            border-color: @color-main;
+            &:enabled:active {
+                color: @color-white;
+                background: @color-main;
+                border-color: @color-main;
+            }
+        }
+    }
+    &.mui-btn-blue.mui-active:enabled,
+    &.mui-btn-blue:enabled:active,
+    &.mui-btn-primary.mui-active:enabled,
+    &.mui-btn-primary:enabled:active,
+    &input[type=submit].mui-active:enabled,
+    &input[type=submit]:enabled:active {
+        background: @color-dark;
+        border-color: @color-dark;
+    }
+}
+
+.mui-slider-cell .oa-contact-cell.mui-table .mui-table-cell {
+    /*padding: 0;*/
+}
+
+nav.mui-bar-tab {
+    background: @color-blank;
+    color: @text-panel;
+    border-top: 0.4px solid @text-panel;
+    height: 50px;
+    font-size: @size;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/*搜索栏设置*/
+
+.search-box {
+    @box-hieght: 30px;
+    margin-bottom: 10px;
+    &:after {
+        clear: both;
+    }
+    .mui-icon.mui-icon-clear {
+        top: 0;
+        height: @box-hieght;
+        line-height: @box-hieght;
+    }
+    .search-filter {
+        float: right;
+        margin-left: -60px;
+        width: 60px;
+        height: @box-hieght;
+        font-size: 12px;
+        padding-left: 12px;
+        line-height: @box-hieght;
+        background: @color-white;
+        color: @text-title;
+        .mui-icon {
+            height: @box-hieght;
+            line-height: @box-hieght;
+            font-size: 16px;
+        }
+    }
+    .mui-search {
+        &.input-box {
+            margin-right: 61px;
+        }
+    }
+}
+
+.mui-search {
+    @box-hieght: 30px;
+    input[type=search] {
+        border-radius: 0;
+        background: @color-white;
+        font-size: 14px;
+        height: @box-hieght;
+        line-height: @box-hieght;
+        padding-left: 38px;
+        padding-right: 30px;
+        margin-bottom: 0;
+    }
+    .mui-placeholder {
+        text-align: left;
+        margin-left: 15px;
+        font-size: @size-main;
+        height: @box-hieght;
+        line-height: @box-hieght;
+    }
+    .mui-placeholder .mui-icon {
+        margin-right: 4px;
+        font-size: 18px;
+    }
+    &.mui-active:before {
+        margin-left: 10px;
+        height: @box-hieght;
+        line-height: @box-hieght;
+        margin-top: -16px;
+        font-size: 18px;
+    }
+    .mui-icon.mui-icon-clear {
+        top: 0;
+        height: @box-hieght;
+        line-height: @box-hieght;
+    }
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.text-code {
+    color: @text-code;
+}
+
+.text-panel {
+    color: @text-panel;
+}
+
+.text-strong {
+    color: @color-strong;
+}
+
+.text-warn {
+    color: @color-warn;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}

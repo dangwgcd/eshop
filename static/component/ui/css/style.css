@@ -1,0 +1,299 @@
+/*color*/
+/*text color*/
+/*size*/
+body {
+  color: #505050;
+  background: #f3f3f3;
+}
+.mui-content {
+  color: #505050;
+  background: #f3f3f3;
+}
+.mui-bar-tab .mui-tab-item.mui-active {
+  color: #1ab394;
+  border-color: #1ab394;
+}
+.mui-icon .mui-badge {
+  background: #f8ac59;
+  border-radius: 0;
+}
+.mui-slider .mui-segmented-control-inverted .mui-control-item {
+  font-size: 14px;
+  color: #b4b4b4;
+  border-color: #b4b4b4;
+  position: relative;
+  border-bottom: 2px solid;
+}
+.mui-slider .mui-segmented-control-inverted .mui-control-item.mui-active {
+  border-bottom: 2px solid !important;
+  color: #1ab394;
+  border-color: #1ab394;
+}
+.mui-slider .mui-segmented-control-inverted .mui-control-item .mui-badge {
+  background: #f8ac59;
+  color: #ffffff;
+  border-radius: 0;
+  font-size: 10px;
+  line-height: 14px;
+  position: absolute;
+  margin-left: -10px;
+  padding: 1px 5px;
+  height: 14px;
+  top: 4px;
+  right: 0px;
+}
+.bottom-bar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #d3d3d3;
+}
+.bottom-bar .bottom-bar-total {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #b4b4b4;
+  text-align: right;
+  padding: 0 15px;
+  background: #ffffff;
+}
+.bottom-bar .bottom-bar-total .text-block {
+  margin-left: 4px;
+}
+.bottom-bar .btn-max {
+  border-radius: 0;
+  width: 100%;
+  line-height: 16px;
+  padding-top: 19.5px;
+  font-size: 16px;
+  padding-bottom: 14.5px;
+}
+.mui-table-view > .mui-table-view-cell {
+  height: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.mui-table-view > .mui-table-view-cell a {
+  margin-top: -15px;
+  line-height: 30px;
+  height: 60px;
+}
+.mui-input-group .mui-checkbox label,
+.mui-input-group .mui-radio label {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.mui-input-group .mui-checkbox input[type=checkbox],
+.mui-input-group .mui-radio input[type=radio] {
+  top: 6px;
+}
+.mui-card-view {
+  padding: 0;
+  margin: 0;
+}
+.mui-card-view .mui-card {
+  margin: 0 0 10px 0;
+  box-shadow: none;
+}
+.mui-card-view .mui-card .mui-card-header {
+  color: #b4b4b4;
+  font-size: 12px;
+  display: block;
+  margin: 0 15px;
+  padding: 5px 0;
+  line-height: 12px;
+  height: 12px;
+  min-height: 22px;
+  border-bottom: 1px solid #d3d3d3;
+}
+.mui-card-view .mui-card .mui-card-headerafter {
+  content: none;
+}
+.mui-card-view .mui-card .mui-card-content-inner {
+  padding: 5px 15px;
+}
+.mui-card-view .mui-card .text-title {
+  font-size: 16px;
+  margin: 4px 0;
+}
+.mui-card-view .mui-card .mui-card-content-noheader .text-code {
+  margin-bottom: 8px;
+  line-height: 12px;
+}
+.mui-card-view .mui-card .mui-card-content-noheader .text-block {
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.mui-card-view .mui-card .mui-card-content-noheader .mui-icon {
+  font-size: 16px;
+}
+.mui-card-view .mui-card .mui-card-content-noheader button {
+  position: absolute;
+  bottom: 15px;
+  margin-top: 0;
+  padding: 7px 24px;
+  font-size: 13px;
+  height: 30px;
+}
+.mui-card-view .mui-card button {
+  position: absolute;
+  right: 15px;
+  padding: 7px 24px;
+  font-size: 13px;
+  top: 50%;
+  margin-top: -18px;
+  line-height: 13px;
+}
+.item-list > .mui-table-view-cell > a:not(.mui-btn) {
+  margin-right: -105px;
+}
+.item-list .mui-checkbox {
+  margin-left: -20px;
+}
+.item-list .mui-table-view-cell:after {
+  left: 0;
+}
+.mui-checkbox input[type=checkbox],
+.mui-radio input[type=radio] {
+  top: 0;
+}
+.mui-checkbox input[type=checkbox]:checked:before,
+.mui-radio input[type=radio]:checked:before {
+  color: #1ab394;
+  font-size: 26px;
+  padding-top: 0;
+  padding-bottom: 0px;
+}
+.mui-checkbox.mui-left label,
+.mui-radio.mui-left label {
+  padding-left: 56px;
+  padding-top: 0;
+  padding-bottom: 0px;
+}
+.mui-btn {
+  border-radius: 5px;
+}
+.mui-btn.mui-btn-primary:not(.mui-btn-outlined) {
+  color: #ffffff;
+  background: #1ab394;
+  border-color: #1ab394;
+}
+.mui-btn.mui-btn-outlined.mui-btn-primary {
+  color: #1ab394;
+  border-color: #1ab394;
+}
+.mui-btn.mui-btn-outlined.mui-btn-primary:enabled:active {
+  color: #ffffff;
+  background: #1ab394;
+  border-color: #1ab394;
+}
+.mui-btn.mui-btn-blue.mui-active:enabled,
+.mui-btn.mui-btn-blue:enabled:active,
+.mui-btn.mui-btn-primary.mui-active:enabled,
+.mui-btn.mui-btn-primary:enabled:active,
+.mui-btninput[type=submit].mui-active:enabled,
+.mui-btninput[type=submit]:enabled:active {
+  background: #0f9c80;
+  border-color: #0f9c80;
+}
+.mui-slider-cell .oa-contact-cell.mui-table .mui-table-cell {
+  /*padding: 0;*/
+}
+nav.mui-bar-tab {
+  background: #fafafa;
+  color: #c8c8c8;
+  border-top: 0.4px solid #c8c8c8;
+  height: 50px;
+  font-size: 11px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*搜索栏设置*/
+.search-box {
+  margin-bottom: 10px;
+}
+.search-box:after {
+  clear: both;
+}
+.search-box .mui-icon.mui-icon-clear {
+  top: 0;
+  height: 30px;
+  line-height: 30px;
+}
+.search-box .search-filter {
+  float: right;
+  margin-left: -60px;
+  width: 60px;
+  height: 30px;
+  font-size: 12px;
+  padding-left: 12px;
+  line-height: 30px;
+  background: #ffffff;
+  color: #a6a6a6;
+}
+.search-box .search-filter .mui-icon {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+.search-box .mui-search.input-box {
+  margin-right: 61px;
+}
+.mui-search input[type=search] {
+  border-radius: 0;
+  background: #ffffff;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 38px;
+  padding-right: 30px;
+  margin-bottom: 0;
+}
+.mui-search .mui-placeholder {
+  text-align: left;
+  margin-left: 15px;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+}
+.mui-search .mui-placeholder .mui-icon {
+  margin-right: 4px;
+  font-size: 18px;
+}
+.mui-search.mui-active:before {
+  margin-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: -16px;
+  font-size: 18px;
+}
+.mui-search .mui-icon.mui-icon-clear {
+  top: 0;
+  height: 30px;
+  line-height: 30px;
+}
+.clear {
+  float: none;
+  clear: both;
+}
+.small {
+  font-size: 12px;
+}
+.text-code {
+  color: #b4b4b4;
+}
+.text-panel {
+  color: #c8c8c8;
+}
+.text-strong {
+  color: #c7505d;
+}
+.text-warn {
+  color: #f8ac59;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}

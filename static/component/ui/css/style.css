@@ -17,6 +17,14 @@ body {
   background: #f8ac59;
   border-radius: 0;
 }
+/*滚动栏高度自适应临时方案 需将上级（包括html标签）全部转为高度100% */
+/*或使用js临时计算获取*/
+.temp-slider-box {
+  height: 100%;
+  margin-top: -100px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
 .mui-slider .mui-segmented-control-inverted .mui-control-item {
   font-size: 14px;
   color: #b4b4b4;
@@ -95,6 +103,60 @@ body {
   margin: 0 0 10px 0;
   box-shadow: none;
 }
+.mui-card-view .mui-card.mui-media {
+  list-style: none;
+}
+.mui-card-view .mui-card.mui-media img {
+  width: 75px;
+  height: 75px;
+  margin: 10px 15px;
+}
+.mui-card-view .mui-card.mui-media .mui-media-body {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.mui-card-view .mui-card.mui-media .mui-media-body .text-title {
+  margin: 0;
+  color: #333333;
+  font-size: 17px;
+  height: 17px;
+  line-height: 17px;
+}
+.mui-card-view .mui-card.mui-media .mui-media-body .text-strong {
+  margin: 13.5px 0;
+  font-size: 17px;
+  height: 17px;
+  line-height: 17px;
+}
+.mui-card-view .mui-card.mui-media .mui-media-body .text-code {
+  color: #b4b4b4;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+}
+.mui-card-view .mui-card.mui-media .mui-media-body .text-code .text-right {
+  color: #1ab394;
+  float: right;
+  text-align: right;
+}
+.mui-card-view .mui-card .mui-card-footer {
+  clear: both;
+  color: #b4b4b4;
+  font-size: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 0;
+}
+.mui-card-view .mui-card .mui-card-footer .text-left {
+  float: left;
+  padding: 7.5px 0;
+  font-size: 13px;
+}
+.mui-card-view .mui-card .mui-card-footer .text-right {
+  float: left;
+  padding: 9.5px 0;
+  font-size: 12px;
+}
 .mui-card-view .mui-card .mui-card-header {
   color: #b4b4b4;
   font-size: 12px;
@@ -104,7 +166,6 @@ body {
   line-height: 12px;
   height: 12px;
   min-height: 22px;
-  border-bottom: 1px solid #d3d3d3;
 }
 .mui-card-view .mui-card .mui-card-headerafter {
   content: none;
@@ -143,6 +204,73 @@ body {
   top: 50%;
   margin-top: -18px;
   line-height: 13px;
+}
+input[type='text'] {
+  text-align: center;
+  border-radius: 0;
+  font-size: 13px;
+  color: #333333;
+  background: #fafafa;
+  border: 1px solid #d3d3d3;
+  border-color: #e6e6e6;
+  line-height: 30px;
+  height: 30px;
+  margin: 10px 0;
+}
+.list-input > .mui-table-view-cell {
+  height: 50px;
+  line-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.list-input > .mui-table-view-cell.input-title {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #a6a6a6;
+}
+.list-input > .mui-table-view-cell.input-title > a:not(.mui-btn) {
+  height: 30px;
+  line-height: 30px;
+}
+.list-input > .mui-table-view-cell .mui-navigate-right:after {
+  right: 44px;
+  color: #1ab394;
+}
+.list-input > .mui-table-view-cell .mui-input-row {
+  height: 50px;
+  line-height: 50px;
+}
+.list-input > .mui-table-view-cell .mui-input-row label {
+  font-size: 15px;
+  padding: 17.5px 0;
+}
+.list-input > .mui-table-view-cell .mui-input-row label ~ input[type='text'] {
+  text-align: center;
+  border-radius: 0;
+  font-size: 13px;
+  color: #333333;
+  background: #fafafa;
+  border: 1px solid #d3d3d3;
+  border-color: #e6e6e6;
+  line-height: 30px;
+  height: 30px;
+  margin: 10px 0;
+}
+.list-input > .mui-table-view-cell > a:not(.mui-btn) {
+  height: 50px;
+  line-height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 55px;
+  margin-top: -10px;
+  margin-right: -105px;
+}
+.list-input .mui-table-view-cell:after {
+  left: 0;
+}
+.item-list {
+  margin-bottom: 10px;
 }
 .item-list > .mui-table-view-cell > a:not(.mui-btn) {
   margin-right: -105px;

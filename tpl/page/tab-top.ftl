@@ -2,6 +2,14 @@
 
 <@htmlHead title="卖家云">
 <link rel="stylesheet" type="text/css" href="/static/mui/css/icons-extra.css">
+<style>
+			.mui-card .mui-control-content {
+				padding: 10px;
+			}
+			.mui-control-content {
+				height: 450px;
+			}
+		</style>
 </@htmlHead>
 
 <@htmlBody>
@@ -136,43 +144,33 @@
 			</ul>
 		</div>
 	</div>
-	<h5 class="mui-content-padded">Style</h5>
-	<div class="mui-card">
-		<form class="mui-input-group">
-			<div class="mui-input-row mui-radio">
-				<label>按钮</label>
-				<input name="style" type="radio" checked value="">
-			</div>
-			<div class="mui-input-row mui-radio">
-				<label>文字</label>
-				<input name="style" type="radio" value="inverted">
-			</div>
-		</form>
-	</div>
-	<h5 class="mui-content-padded">Color</h5>
-	<div class="mui-card">
-		<form class="mui-input-group">
-			<div class="mui-input-row mui-radio">
-				<label><span class="mui-bg-primary" style="display:block;width:25px;height:25px;"></span>
-				</label>
-				<input name="color" type="radio" checked value="primary">
-			</div>
-			<div class="mui-input-row mui-radio">
-				<label><span class="mui-bg-positive" style="display:block;width:25px;height:25px;"></span>
-				</label>
-				<input name="color" type="radio" value="positive">
-			</div>
-			<div class="mui-input-row mui-radio">
-				<label><span class="mui-bg-negative" style="display:block;width:25px;height:25px;"></span>
-				</label>
-				<input name="color" type="radio" value="negative">
-			</div>
-		</form>
-	</div>
 </div>
 
 </@htmlBody>
 
 <@htmlFoot>
 <script src="/static/component/ui/js/main.js"></script>
+<script>
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			(function($) {
+				$('#scroll').scroll({
+					indicators: true //是否显示滚动条
+				});
+				$('#scroll')[0].style.height=(window.innerHeight-163)+"px";
+				var segmentedControl = document.getElementById('segmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if (this.checked) {
+						var styleEl = document.querySelector('input[name="style"]:checked');
+						var colorEl = document.querySelector('input[name="color"]:checked');
+						if (styleEl && colorEl) {
+							var style = styleEl.value;
+							var color = colorEl.value;
+							segmentedControl.className = 'mui-segmented-control' + (style ? (' mui-segmented-control-' + style) : '') + ' mui-segmented-control-' + color;
+						}
+					}
+				});
+			})(mui);
+		</script>
 </@htmlFoot>

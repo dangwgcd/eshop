@@ -18,6 +18,19 @@ body {
     border-radius: 0;
 }
 
+
+/*滚动栏高度自适应临时方案 需将上级（包括html标签）全部转为高度100% */
+
+
+/*或使用js临时计算获取*/
+
+.temp-slider-box {
+    height: 100%;
+    margin-top: -100px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
 .mui-slider {
     .mui-segmented-control-inverted {
         .mui-control-item {
@@ -105,6 +118,60 @@ body {
     .mui-card {
         margin: 0 0 10px 0;
         box-shadow: none;
+        &.mui-media {
+            list-style: none;
+            img {
+                width: 75px;
+                height: 75px;
+                margin: 10px 15px;
+            }
+            .mui-media-body {
+                margin-top: 10px;
+                margin-right: 15px;
+                .text-title {
+                    margin: 0;
+                    color: @text-list;
+                    font-size: 17px;
+                    height: 17px;
+                    line-height: 17px;
+                }
+                .text-strong {
+                    margin: 13.5px 0;
+                    font-size: 17px;
+                    height: 17px;
+                    line-height: 17px;
+                }
+                .text-code {
+                    color: @text-code;
+                    font-size: 14px;
+                    height: 14px;
+                    line-height: 14px;
+                    .text-right {
+                        color: @color-main;
+                        float: right;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .mui-card-footer {
+            clear: both;
+            color: @text-code;
+            font-size: @size-main;
+            padding-top: 0;
+            padding-bottom: 0;
+            min-height: 0;
+            .text-left {
+                float: left;
+                padding: 7.5px 0;
+                font-size: 13px;
+            }
+            .text-right {
+                float: left;
+                padding: 9.5px 0;
+                font-size: 12px;
+            }
+        }
         .mui-card-header {
             color: @text-code;
             font-size: @size-main;
@@ -114,7 +181,6 @@ body {
             line-height: 12px;
             height: 12px;
             min-height: 22px;
-            border-bottom: @border-line;
             &after {
                 content: none;
             }
@@ -159,9 +225,81 @@ body {
     }
 }
 
+input[type='text'] {
+    text-align: center;
+    border-radius: 0;
+    font-size: 13px;
+    color: @text-list;
+    background: @color-blank;
+    border: @border-line;
+    border-color: @color-outline;
+    line-height: 30px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+
+.list-input {
+    >.mui-table-view-cell {
+        height: 50px;
+        line-height: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &.input-title {
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            color: @text-title;
+            >a:not(.mui-btn) {
+                height: 30px;
+                line-height: 30px;
+            }
+        }
+        .mui-navigate-right:after{
+            right: 44px;
+            color: @color-main;
+        }
+        .mui-input-row {
+            height: 50px;
+            line-height: 50px;
+            label {
+                font-size: 15px;
+                padding: 17.5px 0;
+            }
+            label~input[type='text'] {
+                text-align: center;
+                border-radius: 0;
+                font-size: 13px;
+                color: @text-list;
+                background: @color-blank;
+                border: @border-line;
+                border-color: @color-outline;
+                line-height: 30px;
+                height: 30px;
+                margin: 10px 0;
+            }
+        }
+        >a:not(.mui-btn) {
+            height: 50px;
+            line-height: 50px;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 55px;
+            margin-top: -10px;
+            margin-right: -105px;
+        }
+    }
+    .mui-table-view-cell:after {
+        left: 0;
+    }
+}
+
 .item-list {
-    >.mui-table-view-cell>a:not(.mui-btn) {
-        margin-right: -105px;
+    margin-bottom: 10px;
+    >.mui-table-view-cell {
+        >a:not(.mui-btn) {
+            margin-right: -105px;
+        }
     }
     .mui-checkbox {
         margin-left: -20px;
